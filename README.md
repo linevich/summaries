@@ -5,6 +5,7 @@
 ## Предмети
 
 - [Автоматизація ТП та виробництв (2 курс)](automation-tp-and-manufacuring)
+  [PDF](automation-tp-and-manufacuring/build/build.pdf)
 - [Стандартизація взаємозамінність систем та управління якістю (2 курс)](si-and-qm)
 
 [Зворотній зв’язок.](mailto:linevich.net@gmail.com)
