@@ -15,11 +15,8 @@ $endif$
 \setmainlanguage{ukrainian}
 \setmainfont{Times New Roman}
 \newfontfamily\cyrillicfont{Times New Roman}
-%\usepackage[top=2cm, left=2cm, bottom=2cm, right=1cm]{geometry}
 \usepackage{xltxtra}
 \ESKDcompany{Житомирський державний технологічний університет}
-% \ESKDclassCode{Автоматизація ТП та виробництв} 
-% \ESKDsignature{Автоматизація ТП та виробництв}
 \ESKDtitleDesignedBy{Студента групи АТ-22}{Ліневича А.С}
 
 \let\stdsection\section
