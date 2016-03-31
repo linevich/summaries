@@ -12,3 +12,21 @@
   [[PDF](sociology/build/build.pdf)]
 
 [Зворотній зв’язок.](mailto:linevich.net@gmail.com)
+
+## Інструкції по збірці PDF [TODO]
+
+Процес розрахований на збирання під Linux і під Windows не перевірявся. Всі дії виконуються
+в Debian, але і для Ubuntu інструкція має підійти.
+
+Для початку потрібно
+[завантажити і встановити Pandoc](https://github.com/jgm/pandoc/releases/latest).
+
+Також для збірки потрібен xelatex:
+
+```
+sudo apt-get install texlive-full texlive-xetex -y
+```
+
+Після задоволення всіх залежностей достатньо перейти в папку з конспектом і виконати в ній команду
+`make pdf`, і ви отримаєте готовий PDF який буде знаходитись за таким шляхом:
+`назва_конспекту/build/build.pdf`
