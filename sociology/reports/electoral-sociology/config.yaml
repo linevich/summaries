@@ -1,0 +1,13 @@
+---
+title: "Реферат на тему: \"Електоральна соціологія\""
+documentclass: extreport
+papersize: a4
+linestretch: 1.5
+fontsize: 14pt
+mainfont: Times New Roman
+lang: uk
+geometry: [top=2cm, bottom=2cm, left=2cm, right=1cm]
+toc: True
+header-includes:
+    - \newfontfamily\cyrillicfont{Times New Roman}
+---
