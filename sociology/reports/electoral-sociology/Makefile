@@ -4,4 +4,4 @@ odt:
 
 pdf:
 	mkdir -p ./build
-	pandoc --latex-engine=xelatex -S *.md *.yaml  -o build/build.pdf
+	pandoc --latex-engine=xelatex -S *.md *.yaml --include-before-body titlepage.tex -o build/build.pdf
