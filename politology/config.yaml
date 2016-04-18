@@ -1,0 +1,28 @@
+---
+title: "Політологія."
+documentclass: "eskdtext"
+classoption:
+  - "utf8"
+  - "nocolumnsxix"
+  - "nocolumnxxxi"
+  - "nocolumnxxxii"
+author: "Ліневич А.С"
+date: "2016/04/31"
+toc: True
+lang: uk
+header-includes:
+    - \usepackage{xecyr}
+    - \newfontfamily\cyrillicfont{Times New Roman}
+    - \setsansfont{GOST type B}
+    - \ESKDdepartment{Міністерство Освіти і Науки України}
+    - \ESKDcompany{\uppercase{Житомирський Державний Технологічний Університет}}
+    - \ESKDdocName{Конспект занять}
+    - \ESKDtitleDesignedBy{Студента групи АТ-22}{Ліневич А.С}
+    - \ESKDtitleDesignedBy{Викладач}{Муляр В.І}
+    - \ESKDchecker{Муляр В.І}
+    - \ESKDcolumnIX{ЖДТУ АТ-22}
+    - \ESKDsectSkip{section}{0.5cm}{0.5cm}
+    - \ESKDsectSkip{subsection}{0.5cm}{0.5cm}
+    - \ESKDsectSkip{subsubsection}{0.5cm}{0.5cm}
+    - \renewcommand{\ESKDfontII}{\ssfamily\selectfont}
+---
