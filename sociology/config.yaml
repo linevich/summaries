@@ -1,7 +1,28 @@
 ---
-title: "Конспект з курсу: Cоціологія."
+title: "Соціологія"
 documentclass: "eskdtext"
+classoption:
+  - "utf8"
+  - "nocolumnsxix"
+  - "nocolumnxxxi"
+  - "nocolumnxxxii"
 author: "Ліневич А.С"
+date: "2016/04/31"
 toc: True
-date: "18/03/2016"
+lang: uk
+header-includes:
+    - \usepackage{xecyr}
+    - \newfontfamily\cyrillicfont{Times New Roman}
+    - \setsansfont{GOST type B}
+    - \ESKDdepartment{\uppercase{Житомирський Державний Технологічний Університет}}
+    - \ESKDdocName{Конспект з курсу}
+    - \ESKDtitleDesignedBy{Студента групи АТ-22}{Ліневич А.С}
+    - \ESKDtitleDesignedBy{Викладач}{Кругляк М.Е}
+    - \ESKDchecker{Кругляк М.Е}
+    - \ESKDcolumnIX{ЖДТУ АТ-22}
+    - \ESKDsectSkip{section}{0.5cm}{0.5cm}
+    - \ESKDsectSkip{subsection}{0.5cm}{0.5cm}
+    - \ESKDsectSkip{subsubsection}{0.5cm}{0.5cm}
+    - \renewcommand{\ESKDtitleFontI}{\ESKDfontV\upshape}
+
 ---
