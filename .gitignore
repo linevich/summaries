@@ -2,3 +2,9 @@
 *.log
 *.out
 *.toc
+*.svg.pdf
+*.svg.pdf_tex
+*.svg.png
+*.bcf
+*.run.xml
+tmp/
