@@ -1,4 +1,5 @@
 \documentclass[a4paper, ukrainian,utf8,14pt]{extreport}
+\usepackage{titlesec}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -76,18 +77,25 @@
 % \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\huge}
 % \titlespacing*{\chapter}{0pt}{0pt}{40pt}
 
-\def\@makechapterhead#1{%
-  \vspace*{10\p@}%
-  {\parindent \z@ \raggedright \normalfont
-    \ifnum \c@secnumdepth >\m@ne
-        \huge\bfseries \@chapapp\space \thechapter
-        \par\nobreak
-        \vskip 20\p@
-    \fi
-    \interlinepenalty\@M
-    \Huge \bfseries #1\par\nobreak
-    \vskip 10\p@
-  }}
+% Форматування рисунків
+\makeatletter
+\renewcommand\p@figure{(Рис. \thechapter.\arabic{figure})\expandafter\@gobble}
+\makeatother
+
+% Форматування назв розділів
+
+\titleformat{\chapter}[display]{\Large\bfseries}{\MakeUppercase{\chaptertitlename} \thechapter}{0pt}{\bfseries}{}
+
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{1pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1pt}{}
+
+\titlespacing*{\chapter}{0pt}{-30pt}{8pt}
+\titlespacing*{\section}{\parindent}{*1}{*1}
+\titlespacing*{\subsection}{\parindent}{*1}{*1}
+
+% Міжрядковий інтервал 1.5
+\usepackage{setspace}
+\setstretch{1.5}
 
 \title{Вимірювання відносної вологості повітря при оцінці мікроклімату виробничих приміщень.}
 \author{Ліневич А.С}
