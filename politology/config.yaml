@@ -9,6 +9,7 @@ classoption:
 author: "Ліневич А.С"
 date: "2016/04/31"
 toc: True
+toc-depth: 5
 lang: uk
 header-includes:
     - \usepackage{xecyr}
@@ -25,4 +26,5 @@ header-includes:
     - \ESKDsectSkip{subsection}{0.5cm}{0.5cm}
     - \ESKDsectSkip{subsubsection}{0.5cm}{0.5cm}
     - \renewcommand{\ESKDfontII}{\ssfamily\selectfont}
+    - \parindent=1.2cm
 ---

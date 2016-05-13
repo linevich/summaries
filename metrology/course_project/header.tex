@@ -1,4 +1,4 @@
-\documentclass[ukrainian,utf8,14pt]{extreport}
+\documentclass[a4paper, ukrainian,utf8,14pt]{extreport}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -72,14 +72,23 @@
 % \ESKDsectSkip{subsubsection}{0.5cm}{0.5cm}
 % \renewcommand{\ESKDtitleFontI}{\ESKDfontV\upshape}
 
+
+% \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\huge}
+% \titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+\def\@makechapterhead#1{%
+  \vspace*{10\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+        \huge\bfseries \@chapapp\space \thechapter
+        \par\nobreak
+        \vskip 20\p@
+    \fi
+    \interlinepenalty\@M
+    \Huge \bfseries #1\par\nobreak
+    \vskip 10\p@
+  }}
+
 \title{Вимірювання відносної вологості повітря при оцінці мікроклімату виробничих приміщень.}
 \author{Ліневич А.С}
 \date{2016/04/31}
-
-\begin{document}
-\maketitle
-
-{
-\setcounter{tocdepth}{3}
-\tableofcontents
-}

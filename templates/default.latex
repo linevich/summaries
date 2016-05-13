@@ -13,8 +13,9 @@ $endif$
 \usepackage{fontspec}
 \usepackage{polyglossia}
 \setmainlanguage{ukrainian}
-\setmainfont{Times New Roman}
+\setmainfont[Ligatures=TeX]{Times New Roman}
 \newfontfamily\cyrillicfont{Times New Roman}
+\defaultfontfeatures{Ligatures=TeX}
 \usepackage{xltxtra}
 \ESKDcompany{Житомирський державний технологічний університет}
 \ESKDtitleDesignedBy{Студента групи АТ-22}{Ліневича А.С}
