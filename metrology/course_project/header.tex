@@ -86,16 +86,31 @@
 
 \titleformat{\chapter}[display]{\Large\bfseries}{\MakeUppercase{\chaptertitlename} \thechapter}{0pt}{\bfseries}{}
 
-\titleformat{\section}{\normalsize\bfseries}{\thesection}{1pt}{}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1pt}{}
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{5pt}{~}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{5pt}{~}
 
 \titlespacing*{\chapter}{0pt}{-30pt}{8pt}
-\titlespacing*{\section}{\parindent}{*1}{*1}
-\titlespacing*{\subsection}{\parindent}{*1}{*1}
+\titlespacing*{\section}{0pt}{*0}{*0}
+\titlespacing*{\subsection}{0pt}{*0}{*0}
 
 % Міжрядковий інтервал 1.5
 \usepackage{setspace}
 \setstretch{1.5}
+
+ % Покращене форматування таблиць
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
+\usepackage[tableposition=top]{caption}
+% \usepackage{subcaption}
+% \DeclareCaptionLabelFormat{gostfigure}{Рисунок #2}
+% \DeclareCaptionLabelFormat{gosttable}{Таблиця #2}
+% \DeclareCaptionLabelSeparator{gost}
+% \captionsetup{labelsep=gost}
+% \captionsetup[figure]{labelformat=gostfigure}
+% \captionsetup[table]{labelformat=gosttable}
+% \renewcommand{\thesubfigure}{\asbuk{subfigure}}
 
 \title{Вимірювання відносної вологості повітря при оцінці мікроклімату виробничих приміщень.}
 \author{Ліневич А.С}
