@@ -6,7 +6,7 @@
 		     (async-shell-command
 		      (concat "cd "
 			      (file-name-directory buffer-file-name)
-			      " && make pdf && evince build/build.pdf") nil nil))
+			      " && make pdf && mupdf build/build.pdf") nil nil))
 
 		   (defvar summary-mode-map (make-sparse-keymap))
 		   (define-minor-mode summary-mode
