@@ -105,14 +105,27 @@
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 
 \usepackage[tableposition=top]{caption}
-% \usepackage{subcaption}
+\usepackage{subcaption}
+
+% Підписи до таблиць
+% Знайдено тут:
+% http://tex.stackexchange.com/questions/78774/different-alignment-for-table-number-and-caption
+\DeclareCaptionLabelFormat{gosttable}{Таблиця #2}
+\DeclareCaptionLabelSeparator{dash}{~---~}
+\DeclareCaptionLabelSeparator{newline}{\\}
+\captionsetup[table]{labelformat=gosttable}
+\DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
+\captionsetup[table]{format=hfillstart,labelsep=newline,justification=centering}
+
+% Вирівнювання назви по центру
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
+
+%\captionsetup{labelsep=dash}
 % \DeclareCaptionLabelFormat{gostfigure}{Рисунок #2}
-% \DeclareCaptionLabelFormat{gosttable}{Таблиця #2}
-% \DeclareCaptionLabelSeparator{gost}
-% \captionsetup{labelsep=gost}
 % \captionsetup[figure]{labelformat=gostfigure}
-% \captionsetup[table]{labelformat=gosttable}
 % \renewcommand{\thesubfigure}{\asbuk{subfigure}}
+
 
 \title{Вимірювання відносної вологості повітря при оцінці мікроклімату виробничих приміщень}
 \author{Ліневич А.С}
