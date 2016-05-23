@@ -3,8 +3,11 @@
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage[top=2cm, bottom=2cm, left=3cm, right=1cm]{geometry}
+\usepackage[top=1cm, bottom=2cm, left=3cm, right=1cm, headheight=0cm, foot=1cm]{geometry} 
 \usepackage{fixltx2e}
+
+\usepackage{siunitx}
+
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
@@ -107,15 +110,27 @@
 \usepackage[tableposition=top]{caption}
 \usepackage{subcaption}
 
+% Нумерація рядків таблиці
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+
+% Посилання на таблиці
+
+\makeatletter
+\renewcommand\p@table{табл. \@ }
+\makeatother
+
+
+
 % Підписи до таблиць
 % Знайдено тут:
 % http://tex.stackexchange.com/questions/78774/different-alignment-for-table-number-and-caption
 \DeclareCaptionLabelFormat{gosttable}{Таблиця #2}
 \DeclareCaptionLabelSeparator{dash}{~---~}
-\DeclareCaptionLabelSeparator{newline}{\\}
+\DeclareCaptionLabelSeparator{blankline}{\\~\\}
 \captionsetup[table]{labelformat=gosttable}
 \DeclareCaptionFormat{hfillstart}{\hfill#1#2#3\par}
-\captionsetup[table]{format=hfillstart,labelsep=newline,justification=centering}
+\captionsetup[table]{format=hfillstart,labelsep=blankline,justification=centering}
 
 % Вирівнювання назви по центру
 \usepackage{floatrow}
@@ -126,6 +141,22 @@
 % \captionsetup[figure]{labelformat=gostfigure}
 % \renewcommand{\thesubfigure}{\asbuk{subfigure}}
 
+\usepackage{background}
+
+\backgroundsetup{
+  scale=1,
+  color=black,
+  opacity=1.0,
+  angle=0,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{images/border_default.svg.png}}
+}
+
+% Задаємо команду для визначення змінних:
+% потребує пакетів array та tabularx.
+\usepackage{tabularx}
+\newenvironment{conditions}[1][де:]
+  {#1 \begin{tabular}[t]{>{$}l<{$\text{~---~}} @ {${}{}$} l}}
+  {\end{tabular}\\[\belowdisplayskip]}
 
 \title{Вимірювання відносної вологості повітря при оцінці мікроклімату виробничих приміщень}
 \author{Ліневич А.С}
