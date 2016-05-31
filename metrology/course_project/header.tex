@@ -1,10 +1,11 @@
 \documentclass[a4paper, ukrainian,utf8,14pt]{extreport}
-\usepackage{titlesec}
+\usepackage[raggedright]{titlesec} % Опція raggedright вимикає переноси в назвах
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage[top=1cm, bottom=2.2cm, left=3cm, right=1cm, headheight=0cm, foot=1cm]{geometry} 
 \usepackage{fixltx2e}
+\usepackage{python}
 
 \usepackage{siunitx}
 
@@ -87,10 +88,10 @@
 
 % Форматування назв розділів
 
-\titleformat{\chapter}[display]{\Large\bfseries}{\MakeUppercase{\chaptertitlename} \thechapter}{0pt}{\bfseries}{}
+\titleformat{\chapter}[display]{\centering\large\bfseries}{\MakeUppercase{\chaptertitlename} \thechapter}{0pt}{\MakeUppercase}{}
 
-\titleformat{\section}{\large\bfseries}{\thesection}{5pt}{~}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{5pt}{~}
+\titleformat{\section}{\raggedright\large\bfseries}{\thesection}{5pt}{~}
+\titleformat{\subsection}{\raggedright\normalsize\bfseries}{\thesubsection}{5pt}{~}
 
 \titlespacing*{\chapter}{0pt}{-30pt}{8pt}
 \titlespacing*{\section}{0pt}{*0}{*0}
