@@ -4,8 +4,8 @@
 
 \subsection{Методика вимірюванння}
 
-Для проведення дослідження було обрано гігрометричний психрометр ВИТ-1.  Прилад було
-встановлено на вистоі 0.5м, що відповідає вимогам до вимірювання показників мікроклімату для сидячих
+Для проведення дослідження було обрано гігрометричний психрометр ``ВИТ-1''.  Прилад було
+встановлено на висоті 0.5м, що відповідає вимогам до вимірювання показників мікроклімату для сидячих
 робочих місць.
 
 \subsection{Результати спостереження}
@@ -65,77 +65,31 @@
 
 \section{Вимірюванння вологості непрямим методом}
 
+\subsection{Методика вимірюванння}
+
+Для вимірювання вологості непрямим методом було обрано електронний ємнісний гірометр ``Testo 605
+H1''. Прилад було встановлено на висоті 0.5м, що відповідає вимогам до вимірювання показників
+мікроклімату для сидячих робочих місць.
+
 \subsection{Результати спостереження}
 
-Під час проведдення багатократних замірів вологості були отримані результати наедені в
-\ref{t:results_indirect}
+Результати отримані під час виконання замірів наведено в \ref{t:results_indirect}.
 
-\begin{table}[ht!]
-  \caption{Результати спостереження}
-\label{t:results_indirect}
-\begin{tabular}{| c | c | c | c | c | c |}
-  \hline
-  \multicolumn{1}{|C{1cm}|}{№} &
-  \multicolumn{1}{c|}{$\varphi_i$,~\%} &
-  \multicolumn{1}{C{3.0cm}|}{{$\Delta\varphi_i = \varphi_i - \bar{\varphi}$}} &
-  \multicolumn{1}{C{2.5cm}|}{$\Delta{\varphi_i}^2$} &
-  \multicolumn{1}{C{2.5cm}|}{Примітка} \\ \hline
-  \rownumber & 47.95 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 51 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 45 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 53 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 51 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 45 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 53 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 51 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 45 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 53 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 51 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 45 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 53 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 51 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 45 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 53 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 50 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 51 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 45 & 1,44 & 1,85 & \\ \hline
-  \rownumber & 53 & 1,44 & 1,85 & \\ \hline
-  & $\bar{\varphi} = \frac{1}{30} \cdot \displaystyle\sum_{i=1}^{30} \Delta{\varphi_i}^2=50$
-  & 0 & $\delta = 50$ & \\ \hline
+% Завантаження таблиці 2.2
+\begin{python}[./python/indirect_mesurment.py]
+    # -*- coding: utf-8 -*-
+    from .python.indirect_mesurment import print_table
 
-\end{tabular}
-\end{table}
+    print_table()
+\end{python}
 
 \subsection{Обробка результатів спостереження}
-
-Відносна вологість приміщення на початку зміни:
-
-\begin{equation}
-  \varphi = \frac{50 + 50 + 51 + 45 + 53}{5} = 49
-\end{equation}
-
-де $\varphi$ --- відносна вологість, \%.
-
-Відносна вологість приміщення в середині зміни:
-
-\begin{equation}
-  \varphi = \frac{50 + 50 + 51 + 45 + 53}{5} = 49
-\end{equation}
-
-Відносна вологість приміщення в кінці зміни:
 
 \begin{equation}
   \varphi = \frac{50 + 50 + 51 + 45 + 53}{5} = 49
 \end{equation}
 
 \subsection{Оцінка похибок}
+
+\section*{Висновки до розділу 2}
+\addcontentsline{toc}{section}{Висновки до розділу 2}
