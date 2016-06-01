@@ -74,22 +74,22 @@ H1''. Прилад було встановлено на висоті 0.5м, що
 \subsection{Результати спостереження}
 
 Результати отримані під час виконання замірів наведено в \ref{t:results_indirect}.
-
-% Завантаження таблиці 2.2
-\begin{python}[./python/indirect_mesurment.py]
-    # -*- coding: utf-8 -*-
-    from .python.indirect_mesurment import print_table
-
-    print_table()
-\end{python}
+\setlength{\mathindent}{0pt}
+\input{./py/print_table.tex}
 
 \subsection{Обробка результатів спостереження}
 
+Обрахуємо середнє квадратичне відхилення
 \begin{equation}
-  \varphi = \frac{50 + 50 + 51 + 45 + 53}{5} = 49
+  \delta = \sqrt{\frac{1}{N-1} \cdot \displaystyle\sum_{i=1}^{N} ({\varphi_i} -\bar{\varphi})^2}
 \end{equation}
+\begin{itemize}
+\item [Де:] $N$ --- кількість проведених дослідів;
+\item []$\varphi_i$ ---  i-тий елемент вибірки;
+\item []$\bar{\varphi}$ ---  середнє арифметичне вибірки;
+\end{itemize}
 
-\subsection{Оцінка похибок}
+\input{./py/print_delta.tex}
 
 \section*{Висновки до розділу 2}
 \addcontentsline{toc}{section}{Висновки до розділу 2}
