@@ -18,51 +18,119 @@ TABLE_END = r"""\end{tabular}
 """
 
 # Вихідні дані
-RESULTS = [ 48.0, 48.0, 47.9, 47.9, 48.0, 48.1, 48.1, 48.0, 48.0, 48.0,
-            47.9, 47.9, 47.9, 48.0, 48.0, 48.0, 48.0, 48.1, 48.1, 48.1,
-            48.0, 48.0, 47.8, 47.9, 48.0, 48.0, 48.1, 48.2, 48.0, 48.0,]
+RESULTS = [48.0, 48.0, 47.9, 47.9, 48.0, 48.1, 48.1, 48.0, 48.0, 48.0,
+           47.9, 47.9, 47.9, 48.0, 48.0, 48.0, 48.0, 48.1, 48.1, 48.1,
+           48.0, 48.0, 47.8, 47.9, 48.0, 48.0, 48.1, 48.2, 48.0, 48.0, ]
 
 # Рахуємо середнє арифметичне 
-ARITHMETIC_MEAN_OF_FI = sum(RESULTS)/len(RESULTS)
+ARITHMETIC_MEAN_OF_FI = sum(RESULTS) / len(RESULTS)
+
 
 def delta_fi_i():
     result = []
-    
+
     for delta_fi in RESULTS:
         result.append(delta_fi - ARITHMETIC_MEAN_OF_FI)
 
     return result
 
+
 def delta_fi_square():
     result = []
-    
-    for delta_fi in RESULTS:
-        result.append(math.sqrt(delta_fi))
+
+    for delta_fi in delta_fi_i():
+        result.append(pow(delta_fi, 2))
 
     return result
+
 
 DELTA_FI_I = delta_fi_i()
 DELTA_FI_SQUARE = delta_fi_square()
 
+
 def format_data():
     result = []
     for i in range(len(RESULTS)):
-        result.append([RESULTS[i], DELTA_FI_SQUARE[i], DELTA_FI_I[i]])
+        result.append([RESULTS[i], DELTA_FI_I[i], DELTA_FI_SQUARE[i]])
 
     return result
 
-DELTA = math.sqrt(sum(RESULTS)/(len(RESULTS) - 1))
+
+DELTA = math.sqrt(sum(delta_fi_square()) / (len(RESULTS) - 1))
+
+EQUATION_BREAK = '\\\ \n \\MoveEqLeft'
+BEGIN_EQUATION = r'\begin{equation}\begin{split}' + '\n\\MoveEqLeft'
+END_EQUATION = r'\end{split}\end{equation}' + '\n'
+
+BEGIN_DMATH = r'\begin{dmath*}'
+END_DMATH = r'\end{dmath*}'
+
+
+def print_delta():
+    """
+    Виведення покоркових обрахунків середнього квадратичного в LaTex.
+    """
+    n = len(RESULTS)
+
+    # Частина формули з сумою
+    suma = r'\displaystyle\sum_{i=1}^{%s} ({\varphi_i} - %.2f)^2' % (n, ARITHMETIC_MEAN_OF_FI)
+
+    # Підставлення значень в загальну формулу
+    initial_formula = r'\delta = \sqrt{\frac{1}{%s-1} \cdot %s }' % (n, suma)
+    final_formula = r'\delta = \sqrt{\frac{1}{%s-1} \cdot %.2f }' % (n, sum(DELTA_FI_SQUARE)) + \
+        '= \sqrt{%.3f}' % (sum(DELTA_FI_SQUARE) / (n - 1)) + r'\approx %.3f' % math.sqrt(sum(DELTA_FI_SQUARE) / (n - 1))
+
+    first_step = []
+    second_step = []
+
+    for i in RESULTS:
+        second_step_value = float(i) - float(ARITHMETIC_MEAN_OF_FI)
+
+        if second_step_value != 0:
+            first_step.append('(%s - %s)^2' % (i, ARITHMETIC_MEAN_OF_FI))
+            second_step.append('%.2f^2' % (second_step_value))
+        else:
+            first_step.append('\cancel{(%s - %s)}^2' % (i, ARITHMETIC_MEAN_OF_FI))
+
+    # Параметри переносів
+    indent = 2
+    offset = 4
+
+    # Ставимо перенос для 3-го елементу (нумерація з 0)
+    first_step[indent] += ' + ' + EQUATION_BREAK
+
+    # Розставляємо перенсоси для вирівнювання формули:
+    for i in range(offset + indent, len(RESULTS), offset):
+        first_step[i] += ' + ' + EQUATION_BREAK
+
+    # Перший крок для обрахунків
+    first_formula = r'%s = %s' % (suma, ' + '.join(first_step))
+
+    for i in range(7, len(second_step), 8):
+        second_step[i] += '+' + EQUATION_BREAK
+
+    # Другий крок для обрахунків
+    second_formula = ' = ' + EQUATION_BREAK + r'= %s = %.3f' % (' + '.join(second_step), sum(DELTA_FI_SQUARE))
+
+    return BEGIN_EQUATION + initial_formula + END_EQUATION + \
+           BEGIN_EQUATION + first_formula + second_formula + END_EQUATION + \
+           BEGIN_EQUATION + final_formula + END_EQUATION
+
 
 def print_table():
-
-    print(TABLE_BEING)
-    #Виводимо таблицю результатів
+    rows = []
     for col in format_data():
-        print(r'\rownumber & %s & %.2f & %.2f & \\ \hline' % (col[0], col[1], col[2]))
+        rows.append(r'\rownumber & $$%s$$ & $$%.2f$$ & $$%.2f$$ & \\ \hline' % (col[0], col[1], col[2]))
+
+    rows = '\n'.join(rows)
 
     # Виводимо нижній рядок таблиці
     bottom_row = r' & $\bar{\varphi} = \frac{1}{%s} \cdot \displaystyle\sum_{i=1}^{%s} \Delta{\varphi_i}=%s$ & %s & $\delta = %.2f$ & \\ \hline'
-    print(bottom_row % (len(RESULTS), len(RESULTS), ARITHMETIC_MEAN_OF_FI, sum(DELTA_FI_I), DELTA))
-    print(TABLE_END)
 
-print_table()
+    return TABLE_BEING + rows + bottom_row % (
+        len(RESULTS),
+        len(RESULTS),
+        ARITHMETIC_MEAN_OF_FI,
+        sum(DELTA_FI_I),
+        DELTA
+    ) + TABLE_END
