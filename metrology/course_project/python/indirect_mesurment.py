@@ -22,6 +22,9 @@ RESULTS = [48.0, 48.0, 47.9, 47.9, 48.0, 48.1, 48.1, 48.0, 48.0, 48.0,
            47.9, 47.9, 47.9, 48.0, 48.0, 48.0, 48.0, 48.1, 48.1, 48.1,
            48.0, 48.0, 47.8, 47.9, 48.0, 48.0, 48.1, 48.2, 48.0, 48.0, ]
 
+# Одиниці вимірювання
+MEASUREMENT_UNIT = r'\%'
+
 # Рахуємо середнє арифметичне 
 ARITHMETIC_MEAN_OF_FI = sum(RESULTS) / len(RESULTS)
 
@@ -77,8 +80,6 @@ def print_delta():
 
     # Підставлення значень в загальну формулу
     initial_formula = r'\delta = \sqrt{\frac{1}{%s-1} \cdot %s }' % (n, suma)
-    final_formula = r'\delta = \sqrt{\frac{1}{%s-1} \cdot %.2f }' % (n, sum(DELTA_FI_SQUARE)) + \
-        '= \sqrt{%.3f}' % (sum(DELTA_FI_SQUARE) / (n - 1)) + r'\approx %.3f' % math.sqrt(sum(DELTA_FI_SQUARE) / (n - 1))
 
     first_step = []
     second_step = []
@@ -110,7 +111,15 @@ def print_delta():
         second_step[i] += '+' + EQUATION_BREAK
 
     # Другий крок для обрахунків
-    second_formula = ' = ' + EQUATION_BREAK + r'= %s = %.3f' % (' + '.join(second_step), sum(DELTA_FI_SQUARE))
+    second_formula = ' = ' + EQUATION_BREAK + r'= %s = %.2f %s' % (
+        ' + '.join(second_step),
+        sum(DELTA_FI_SQUARE),
+        MEASUREMENT_UNIT
+    )
+
+    final_formula = r'\delta = \sqrt{\frac{1}{%s-1} \cdot %.2f }' % (n, sum(DELTA_FI_SQUARE))
+    final_formula += '= \sqrt{%.3f}' % (sum(DELTA_FI_SQUARE) / (n - 1))
+    final_formula += r'\approx %.3f %s' % (math.sqrt(sum(DELTA_FI_SQUARE) / (n - 1)), MEASUREMENT_UNIT)
 
     return BEGIN_EQUATION + initial_formula + END_EQUATION + \
            BEGIN_EQUATION + first_formula + second_formula + END_EQUATION + \
@@ -125,12 +134,15 @@ def print_table():
     rows = '\n'.join(rows)
 
     # Виводимо нижній рядок таблиці
-    bottom_row = r' & $\bar{\varphi} = \frac{1}{%s} \cdot \displaystyle\sum_{i=1}^{%s} \Delta{\varphi_i}=%s$ & %s & $\delta = %.2f$ & \\ \hline'
-
-    return TABLE_BEING + rows + bottom_row % (
+    bottom_row = r' & $\bar{\varphi} = \frac{1}{%s} \cdot \displaystyle\sum_{i=1}^{%s} \Delta{\varphi_i}=%s$' % (
         len(RESULTS),
         len(RESULTS),
         ARITHMETIC_MEAN_OF_FI,
-        sum(DELTA_FI_I),
-        DELTA
-    ) + TABLE_END
+    )
+    print(bottom_row)
+    type(bottom_row)
+    bottom_row += r' & %.2f' % sum(DELTA_FI_I)
+    bottom_row += r' & $\delta = %.2f$ %s' % (DELTA, MEASUREMENT_UNIT)
+    bottom_row += r' & \\ \hline'
+
+    return TABLE_BEING + rows + bottom_row + TABLE_END
