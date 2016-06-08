@@ -2,36 +2,27 @@
 \section{Визначення метрологічних характеристик електроного ємнісного гігрометра}
 
 Для визначення метрологічних характеристик ємнісного гігрометра було використано
-зразковий(еталонний) гігрометр ``ВИТ-1'' і вольтметр який було під’єднано до досліджувагого гігрометра.
+зразковий(еталонний) гігрометр ``ВИТ-1'' і мультиметр налаштований на вимрювання ємності який було
+під’єднано до досліджувагого гігрометра.
 
 Отримано 11 значень вологості і напруги. Результати обрахунків та вимірювань наведені в таблиці \ref{t:metrological_exp}
 
-\begin{table}[ht!]
-  \caption{Результати обрахунків та вимірювань}
-  \label{t:metrological_exp}
-\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c | c |}
-\hline
-\multicolumn{1}{|c|}{$\varphi$,~\%} &
-\multicolumn{1}{c|}{1.1} &
-\multicolumn{1}{c|}{1.2} &
-\multicolumn{1}{c|}{1.3} &
-\multicolumn{1}{c|}{1.4} &
-\multicolumn{1}{c|}{1.5} &
-\multicolumn{1}{c|}{1.6} &
-\multicolumn{1}{c|}{1.7} &
-\multicolumn{1}{c|}{1.8} &
-\multicolumn{1}{c|}{1.9} &
-\multicolumn{1}{c|}{1.10} &
-\multicolumn{1}{c|}{1.11} \\ \hline
-$U,~\text{мВ}$ & $47.9$ & $-0.10$ & $0.01$ & $48.0$ & $0.00$ & $0.00$ & $48.0$ & $0.00$ & $0.00$ & $48.0$ & $0.00$  \\ \hline 
-$\Delta U_1,~\text{В}$ & \multicolumn{11}{|c|}{$10.0$}  \\ \hline
-$\Delta U_2,~\text{В}$ & \multicolumn{11}{|c|}{$10.0$}  \\ \hline
-$\Delta U_{\sum},~В $ & \multicolumn{11}{|c|}{$10.0$}  \\ \hline
-$y_{\sum}, ~\% $ & \multicolumn{11}{|c|}{$10.0$}  \\ \hline
-$\delta_n,~\%$ & $47.9$ & $-0.10$ & $0.01$ & $48.0$ & $0.00$ & $0.00$ & $48.0$ & $0.00$ & $0.00$ & $48.0$ & $0.00$  \\ \hline
-\end{tabular}
-\end{table}
+\input{./py/print_sensitivity_table.tex}
 
+\begin{enumerate}[leftmargin=*]
+    \item Знайдемо чутливість для кожного з результатів:
+
+    \begin{equation}
+        S = \frac{C}{\varphi}
+    \end{equation}
+
+    \begin{itemize}
+        \item [Де:] $C$ --- ємність мембрани, ~пкФ;
+        \item []$\varphi$ ---  значення вологості, ~\%;
+    \end{itemize}
+
+    \input{./py/print_sensitivity.tex}
+\end{enumerate}
 
 \section*{Висновки до розділу 3}
 \addcontentsline{toc}{section}{Висновки до розділу 3}
