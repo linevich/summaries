@@ -7,6 +7,7 @@
 Результати вимірювання подані в форматі [ [Вологість, Ємність], ..., ]
 """
 from python.base import newline_join, amp_join, amp_newline_join
+from python.indirect_mesurment import BEGIN_EQUATION, END_EQUATION, EQUATION_BREAK
 
 RESULTS = [
     [24.1, 11.0],
@@ -24,7 +25,7 @@ RESULTS = [
 
 RESULTS_COUNT = len(RESULTS)
 
-MEASUREMENT_UNITS = r'\text{ пкФ/\%}'
+MEASUREMENT_UNITS = r'\text{ пкФ}/\%'
 
 
 def find_sensitivity():
@@ -36,7 +37,7 @@ def find_sensitivity():
     sensitivity = []
 
     for humidity, capacitance in RESULTS:
-        sensitivity.append(capacitance / humidity)
+        sensitivity.append(round(capacitance / humidity, 2))
 
     return sensitivity
 
@@ -96,14 +97,24 @@ def print_sensitivity_am():
     """
     Виводимо середню чутливість в LaTeX
     """
-    formula = r'S_text{ср} = \frac{%s}{%s} = %.2f %s'
+    suma = r'\sum S_{\text{cp}} = %s = %s'
+
+    sensivity = []
+    sensivity += SENSITIVITY
+    sensivity.insert(8, EQUATION_BREAK)
+    sensivity = (str(item) for item in sensivity)
+
+    suma %= ('+'.join(sensivity), str(sum(SENSITIVITY)) + MEASUREMENT_UNITS)
+
+    formula = r' S_{\text{cp}} = \frac{%.2f}{%s} = %.2f %s'
     formula %= (
-        '+'.join('{:.2f}'.format(item) for item in SENSITIVITY),
+        sum(SENSITIVITY),
         RESULTS_COUNT,
         SENSITIVITY_AM,
         MEASUREMENT_UNITS
     )
-    return formula
+    return BEGIN_EQUATION + suma + END_EQUATION + \
+           BEGIN_EQUATION + formula + END_EQUATION
 
 
 def print_sensitivity_table():

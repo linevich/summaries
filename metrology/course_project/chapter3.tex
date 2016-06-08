@@ -18,10 +18,23 @@
 
     \begin{itemize}
         \item [Де:] $C$ --- ємність мембрани, ~пкФ;
-        \item []$\varphi$ ---  значення вологості, ~\%;
+        \item []$\varphi$ ---  значення вологості, ~\%.
     \end{itemize}
 
     \input{./py/print_sensitivity.tex}
+
+    \item Розрахуємо середню чутливість:
+
+    \begin{equation}
+    S_{\text{ср}} = \frac{\sum S_n}{n}
+    \end{equation}
+
+    \begin{itemize}
+        \item [Де:] $S_n$ --- чутливість n-ного результати спостереження, пкФ/\%;
+        \item []$n$ ---  кількість результатів спостереження.
+    \end{itemize}
+
+    \input{./py/print_sensitivity_am.tex}
 \end{enumerate}
 
 \section*{Висновки до розділу 3}
