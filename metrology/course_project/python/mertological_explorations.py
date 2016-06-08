@@ -24,6 +24,8 @@ RESULTS = [
 
 RESULTS_COUNT = len(RESULTS)
 
+MEASUREMENT_UNITS = r'\text{ пкФ/\%}'
+
 
 def find_sensitivity():
     """
@@ -48,8 +50,6 @@ def print_sensitivity():
     """
 
     formula_string = r'S_{%s} &= \frac{%s}{%s} &= %.2f %s; %s'
-    measurement_units = r'\text{ пкФ/\%}'
-    # measurement_units = r''
     output_formula = []
 
     counter = 0
@@ -80,12 +80,30 @@ def print_sensitivity():
                 RESULTS[i][1],
                 RESULTS[i][0],
                 SENSITIVITY[i],
-                measurement_units,
+                MEASUREMENT_UNITS,
                 after,
             ))
 
     output_formula = r'\begin{equation}' + '\n' + '\n'.join(output_formula) + '\n' + r'\end{equation}'
     return output_formula
+
+
+# Обраховуємо середню чутливість.
+SENSITIVITY_AM = sum(SENSITIVITY) / RESULTS_COUNT
+
+
+def print_sensitivity_am():
+    """
+    Виводимо середню чутливість в LaTeX
+    """
+    formula = r'S_text{ср} = \frac{%s}{%s} = %.2f %s'
+    formula %= (
+        '+'.join('{:.2f}'.format(item) for item in SENSITIVITY),
+        RESULTS_COUNT,
+        SENSITIVITY_AM,
+        MEASUREMENT_UNITS
+    )
+    return formula
 
 
 def print_sensitivity_table():
