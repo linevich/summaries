@@ -108,7 +108,7 @@ def print_delta():
     # Перший крок для обрахунків
     first_formula = r'%s = %s' % (suma, ' + '.join(first_step))
 
-    for i in range(7, len(second_step), 8):
+    for i in range(6, len(second_step), 8):
         second_step[i] += '+' + EQUATION_BREAK
 
     # Другий крок для обрахунків
