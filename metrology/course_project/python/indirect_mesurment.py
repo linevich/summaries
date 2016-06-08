@@ -60,6 +60,7 @@ def format_data():
 
 
 DELTA = math.sqrt(sum(delta_fi_square()) / (len(RESULTS) - 1))
+DELTA_CA = DELTA / math.sqrt(len(RESULTS))
 
 EQUATION_BREAK = '\\\ \n \\MoveEqLeft'
 BEGIN_EQUATION = r'\begin{equation}\begin{split}' + '\n\\MoveEqLeft'
@@ -126,6 +127,16 @@ def print_delta():
            BEGIN_EQUATION + final_formula + END_EQUATION
 
 
+def print_delta_ca():
+    """
+    Виводимо середнє квадратичне середнього арифметичного.
+    """
+    equation_string = r'\delta_{\text{са}} = \frac{\delta}{\sqrt{N}} = \frac{%.3f}{\sqrt{%d}} = %.3f'
+    equation_string = equation_string % (DELTA, len(RESULTS), DELTA_CA)
+
+    return BEGIN_EQUATION + equation_string + MEASUREMENT_UNIT + END_EQUATION
+
+
 def print_table():
     rows = []
     for col in format_data():
@@ -139,10 +150,19 @@ def print_table():
         len(RESULTS),
         ARITHMETIC_MEAN_OF_FI,
     )
-    print(bottom_row)
-    type(bottom_row)
     bottom_row += r' & %.2f' % sum(DELTA_FI_I)
-    bottom_row += r' & $\delta = %.2f$ %s' % (DELTA, MEASUREMENT_UNIT)
+    bottom_row += r' & $\delta = %.2f %s$' % (DELTA, MEASUREMENT_UNIT)
     bottom_row += r' & \\ \hline'
 
     return TABLE_BEING + rows + bottom_row + TABLE_END
+
+
+def print_observations_confident_interval():
+    equation_string = r'\Delta_i = %.2f \pm 2.0 \cdot %.3f = ( %.2f \pm %.3f )'
+    equation_string = equation_string % (
+        ARITHMETIC_MEAN_OF_FI,
+        DELTA,
+        ARITHMETIC_MEAN_OF_FI,
+        float(ARITHMETIC_MEAN_OF_FI) * float(DELTA)
+    )
+    return BEGIN_EQUATION + equation_string + MEASUREMENT_UNIT + END_EQUATION
