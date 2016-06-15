@@ -4,6 +4,7 @@ documentclass: "extreport"
 classoption:
   - "utf8"
   - "14pt"
+  - "a4paper"
 author: "Ліневич А.С"
 date: \today{}
 toc: True
