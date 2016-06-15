@@ -1,30 +1,20 @@
 ---
 title: "Політологія."
-documentclass: "eskdtext"
+documentclass: "extreport"
 classoption:
   - "utf8"
-  - "nocolumnsxix"
-  - "nocolumnxxxi"
-  - "nocolumnxxxii"
+  - "14pt"
 author: "Ліневич А.С"
-date: "2016/04/31"
+date: \today{}
 toc: True
 toc-depth: 5
 lang: uk
+geometry: [top=2cm, right=1cm, left=3cm, bottom=2cm]
 header-includes:
     - \usepackage{xecyr}
     - \newfontfamily\cyrillicfont{Times New Roman}
-    - \setsansfont{GOST type B}
-    - \ESKDdepartment{Міністерство Освіти і Науки України}
-    - \ESKDcompany{\uppercase{Житомирський Державний Технологічний Університет}}
-    - \ESKDdocName{Конспект занять}
-    - \ESKDtitleDesignedBy{Студента групи АТ-22}{Ліневич А.С}
-    - \ESKDtitleDesignedBy{Викладач}{Муляр В.І}
-    - \ESKDchecker{Муляр В.І}
-    - \ESKDcolumnIX{ЖДТУ АТ-22}
-    - \ESKDsectSkip{section}{0.5cm}{0.5cm}
-    - \ESKDsectSkip{subsection}{0.5cm}{0.5cm}
-    - \ESKDsectSkip{subsubsection}{0.5cm}{0.5cm}
-    - \renewcommand{\ESKDfontII}{\ssfamily\selectfont}
     - \parindent=1.2cm
+    - \usepackage{setspace}
+    - \setstretch{1.3}
+
 ---
