@@ -15,6 +15,6 @@ header-includes:
     - \newfontfamily\cyrillicfont{Times New Roman}
     - \parindent=1.2cm
     - \usepackage{setspace}
+    - \usepackage{indentfirst} 
     - \setstretch{1.3}
-
 ---
