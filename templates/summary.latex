@@ -7,6 +7,7 @@
 \titlespacing*{\chapter}{0pt}{-30pt}{8pt}
 \titlespacing*{\section}{0pt}{*0}{*0}
 \titlespacing*{\subsection}{0pt}{*0}{*0}
+\usepackage{multicol}
 %END CUSTOM    
 
 $if(fontfamily)$
@@ -218,6 +219,9 @@ $endif$
 \date{$date$}
 
 \begin{document}
+\let\otherbegin\begin
+\let\otherend\end
+
 $if(title)$
 \maketitle
 $endif$
