@@ -10,6 +10,8 @@
   [[PDF](si-and-qm/build/build.pdf)]
 - [Соціологія (2 курс)](sociology)
   [[PDF](sociology/build/build.pdf)]
+- [Політологія (2 курс)](politology)
+  [[PDF](politology/build/build.pdf)]
 
 [Зворотній зв’язок.](mailto:linevich.net@gmail.com)
 
