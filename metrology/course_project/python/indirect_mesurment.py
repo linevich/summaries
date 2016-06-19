@@ -90,7 +90,10 @@ def print_delta():
 
         if second_step_value != 0:
             first_step.append('(%s - %s)^2' % (i, ARITHMETIC_MEAN_OF_FI))
-            second_step.append('%.2f^2' % (second_step_value))
+            if second_step_value < 0:
+                second_step.append('(%.2f^2)' % (second_step_value))
+            else:
+                second_step.append('%.2f^2' % (second_step_value))
         else:
             first_step.append('\cancel{(%s - %s)}^2' % (i, ARITHMETIC_MEAN_OF_FI))
 
