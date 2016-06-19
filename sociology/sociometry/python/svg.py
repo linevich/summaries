@@ -3,6 +3,8 @@ from svgwrite import (
     Drawing,
 )
 from python.base import *
+from math import cos, sin, radians
+import random
 
 OUTPUT = os.path.join(os.getcwd(), 'py', 'chart.svg')
 CENTER = SIZE / 2
@@ -24,19 +26,27 @@ main_circle_2.update(circle_style)
 main_circle_3 = plot.add(shapes.Circle(center=[CENTER, CENTER], r=CENTER))
 main_circle_3.update(circle_style)
 
-man = Male(
-    size=50,
-    label='A',
-    tx=50
-)
+for _ in range(0, 50):
+    angle = random.randint(0, 360)
+    position = random.randint(-CENTER, CENTER)
+    tx = round(float(cos(radians(angle))), 1) * position
+    ty = -round(float(sin(radians(angle))), 1) * position
+
+    print('%s --- %s %s' % (angle, tx, ty))
+
+    man = Female(
+        size=40,
+        label=angle,
+        tx=tx,
+        ty=ty,
+    )
+    plot.add(man.create_element())
+
 women = Female(
     size=50,
     label='B',
 )
-
-plot.add(man.create_element())
 plot.add(women.create_element())
-
 
 # BEGIN
 plot.save()
