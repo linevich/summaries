@@ -9,42 +9,80 @@
 
 \input{./py/print_sensitivity_table.tex}
 
-\begin{enumerate}[leftmargin=*]
-    \item Знайдемо чутливість для кожного з результатів:
+\subsection{Визначення чутливості кожного з результатів}
 
-    \begin{equation}
-        S = \frac{C}{\varphi}
-    \end{equation}
+Знайдемо чутливість для кожного з результатів:
 
-    \begin{itemize}
-        \item [Де:] $C$ --- ємність мембрани, ~пкФ;
-        \item []$\varphi$ ---  значення вологості, ~\%.
-    \end{itemize}
+\begin{equation}
+  S = \frac{C}{\varphi}
+\end{equation}
 
-    \input{./py/print_sensitivity.tex}
+\begin{itemize}
+\item [Де:] $C$ --- ємність мембрани, ~пкФ;
+\item []$\varphi$ ---  значення вологості, ~\%.
+\end{itemize}
 
-    \item Розрахуємо середню чутливість:
+\input{./py/print_sensitivity.tex}
 
-    \begin{equation}
-    S_{\text{ср}} = \frac{\sum S_n}{n}
-    \end{equation}
 
-    \begin{itemize}
-        \item [Де:] $S_n$ --- чутливість n-го результату спостереження, пкФ/\%;
-        \item []$n$ ---  кількість результатів спостереження.
-    \end{itemize}
+\subsection{Визначення середньої чутливості}
 
-    \input{./py/print_sensitivity_am.tex}
+ Розрахуємо середню чутливість:
 
-    \item Розрахуємо похибку ємності:
+ \begin{equation}
+   S_{\text{ср}} = \frac{\sum S_n}{n}
+ \end{equation}
 
-    \item Визначимо приведену похибку:
+ \begin{itemize}
+ \item [Де:] $S_n$ --- чутливість n-го результату спостереження, пкФ/\%;
+ \item []$n$ ---  кількість результатів спостереження.
+ \end{itemize}
 
-    \item Визначимо відносну похибку вимірювання:
-\end{enumerate}
+ \input{./py/print_sensitivity_am.tex}
+
+
+\subsection{Визначення cумарної середньоквадратичної похибки вимірюваня}
+
+\begin{equation}
+  \Delta C_{\sum} = \sqrt{\Delta C_1^2 + \Delta C_2^2}
+\end{equation}
+
+\begin{equation}
+  \Delta \varphi = \frac{\varphi_{max} \cdot \gamma_{\text{гігр.}} }{100}
+\end{equation}
+\begin{itemize}
+\item [Де:] $\varphi_{max}$ --- максимальне значення вологості, \%;
+\item []$\gamma_{\text{гігр.}}$ ---  приведена похибка гігрометра.
+\end{itemize}
+
+\begin{gather}
+  \varphi_{max} = 95 ~\%; \nonumber\\
+  \Delta \gamma_{\text{гігр.}} = 3.158 ~\%; \\
+  \Delta \varphi = \frac{95 \cdot 3.158}{100} = 3.0 \%. \nonumber
+\end{gather}
+\begin{equation}
+    \Delta C_1 = \Delta \varphi \cdot S_{\text{cep}} = 3 \cdot 7.72 = 23.16 ~\text{пкФ}
+\end{equation}
+\begin{gather}
+    C_{max} = 2000 ~\text{пкФ}; \nonumber\\
+    \Delta \gamma_{\text{мульт.}} = 4 ~\%; \\
+    \Delta C_2 = \frac{C_{max} \cdot \gamma_{\text{мульт.}}}{100} = \frac{2000 \cdot 4}{100} = 80 ~\text{пкФ}. \nonumber
+\end{gather}
+
+\begin{equation}
+  \Delta C_{\sum}  = \sqrt{23.16^2 + 20^2} = 83.285 ~\text{пкФ}
+\end{equation}
+
+
+    
+\subsection{Визначення приведеної похибки вимірювання}
+Визначимо приведену похибку:
+
+\subsection{Визначимо відносну похибку вимірювання:}
+Визначимо відносну похибку вимірювання:
 
 \section*{Висновки до розділу 3}
 \addcontentsline{toc}{section}{Висновки до розділу 3}
 
-Визначено метрологоічні характеристики електронного ємнісного гігрометра ``Testo 605 H1'', проведено
+Визначено метрологоічні характеристики електронного ємнісного гігрометра ``Testo 605 h_1'', проведено
 ознайомелення з методикою повірки метрологічних приладів.
