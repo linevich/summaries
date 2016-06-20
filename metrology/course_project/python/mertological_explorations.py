@@ -10,17 +10,17 @@ from python.base import newline_join, amp_join, amp_newline_join
 from python.indirect_mesurment import BEGIN_EQUATION, END_EQUATION, EQUATION_BREAK
 
 RESULTS = [
-    [24.1, 11.0],
-    [32.3, 25.6],
-    [42.0, 34.3],
-    [53.1, 45.2],
-    [67.0, 60.0],
-    [82.3, 72.2],
-    [65.9, 59.4],
-    [51.6, 45.0],
-    [42.4, 34.7],
-    [33.2, 25.5],
-    [24.0, 10.6],
+    [24.1, 110],
+    [32.3, 256],
+    [42.0, 343],
+    [53.1, 452],
+    [67.0, 600],
+    [82.3, 722],
+    [65.9, 594],
+    [51.6, 450],
+    [42.4, 347],
+    [33.2, 255],
+    [24.0, 106],
 ]
 
 RESULTS_COUNT = len(RESULTS)
@@ -104,7 +104,7 @@ def print_sensitivity_am():
     sensivity.insert(8, EQUATION_BREAK)
     sensivity = (str(item) for item in sensivity)
 
-    suma %= ('+'.join(sensivity), str(sum(SENSITIVITY)) + MEASUREMENT_UNITS)
+    suma %= ('+'.join(sensivity), str(round(sum(SENSITIVITY), 2)) + MEASUREMENT_UNITS)
 
     formula = r' S_{\text{cp}} = \frac{%.2f}{%s} = %.2f %s'
     formula %= (
@@ -179,3 +179,8 @@ def print_sensitivity_table():
     bottom_row = amp_join(bottom_row) + newline
 
     return begin + tabular + first_row + second_row + third_six_rows + bottom_row + end
+
+
+def print_delta_fi():
+    euqiation = r'\Delta = \frac{%s}{%s} = \aprox = %s %s' % ('', '', '', MEASUREMENT_UNITS)
+    return BEGIN_EQUATION + END_EQUATION
