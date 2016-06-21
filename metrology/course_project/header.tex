@@ -5,6 +5,7 @@
 \usepackage{ifxetex,ifluatex}
 \usepackage[top=1cm, bottom=2.2cm, left=3cm, right=1cm, headheight=0cm, foot=1cm]{geometry}
 \usepackage{fixltx2e}
+\usepackage{indentfirst}
 \usepackage{breqn}
 \usepackage{mathtools}
 \usepackage{cancel} % Закреслювання виразів (скорочення)
@@ -50,7 +51,6 @@
 \IfFileExists{parskip.sty}{%
 \usepackage{parskip}
 }{% else
-\setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 }
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
@@ -104,8 +104,6 @@
 % Міжрядковий інтервал 1.5
 \usepackage{setspace}
 \setstretch{1.5}
-
-\setlength\parindent{0.5mm}
 
  % Покращене форматування таблиць
 \usepackage{multirow}
@@ -170,3 +168,8 @@
 \title{Вимірювання відносної вологості повітря при оцінці мікроклімату виробничих приміщень}
 \author{Ліневич А.С}
 \date{2016/04/31}
+
+\newlength{\indentation}
+\settowidth{\indentation}{ааа} % Подумки бажаю горіти в пеклі тому хто придумав визначення "абзац = 3 символи"
+
+\parindent=\indentation
