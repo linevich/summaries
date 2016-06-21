@@ -10,7 +10,7 @@ from python.base import newline_join, amp_join, amp_newline_join
 from python.indirect_mesurment import BEGIN_EQUATION, END_EQUATION, EQUATION_BREAK
 
 RESULTS = [
-    [24.1, 110],
+    [24.1, 160],
     [32.3, 256],
     [42.0, 343],
     [53.1, 452],
@@ -20,12 +20,12 @@ RESULTS = [
     [51.6, 450],
     [42.4, 347],
     [33.2, 255],
-    [24.0, 106],
+    [24.0, 166],
 ]
 
 RESULTS_COUNT = len(RESULTS)
 
-MEASUREMENT_UNITS = r'\text{ пкФ}/\%'
+MEASUREMENT_UNITS = r'\text{ пФ}/\%'
 
 
 def find_sensitivity():
@@ -92,6 +92,18 @@ def print_sensitivity():
 # Обраховуємо середню чутливість.
 SENSITIVITY_AM = sum(SENSITIVITY) / RESULTS_COUNT
 
+DELTA_C_SUM = 21.443
+
+
+def delta_n():
+    results = []
+    for humidity, capacitance in RESULTS:
+        results.append(round((DELTA_C_SUM / capacitance * 100), 3))
+    return results
+
+
+DELTA_N = delta_n()
+
 
 def print_sensitivity_am():
     """
@@ -99,12 +111,12 @@ def print_sensitivity_am():
     """
     suma = r'\sum S_{\text{cp}} = %s = %s'
 
-    sensivity = []
-    sensivity += SENSITIVITY
-    sensivity.insert(8, EQUATION_BREAK)
-    sensivity = (str(item) for item in sensivity)
+    sensitivity = []
+    sensitivity += SENSITIVITY
+    sensitivity.insert(8, EQUATION_BREAK)
+    sensitivity = (str(item) for item in sensitivity)
 
-    suma %= ('+'.join(sensivity), str(round(sum(SENSITIVITY), 2)) + MEASUREMENT_UNITS)
+    suma %= ('+'.join(sensitivity), str(round(sum(SENSITIVITY), 2)) + MEASUREMENT_UNITS)
 
     formula = r' S_{\text{cp}} = \frac{%.2f}{%s} = %.2f %s'
     formula %= (
@@ -161,17 +173,17 @@ def print_sensitivity_table():
         r'$\Delta C_1$, ~\text{пФ} & \multicolumn{11}{|c|}{$1$}  \\ \hline',
         r'$\Delta C_2$, ~\text{пФ} & \multicolumn{11}{|c|}{$1$}  \\ \hline',
         r'$\Delta C_{\sum}$, ~пФ  & \multicolumn{11}{|c|}{$1$}  \\ \hline',
-        r'$y_{\sum}$, ~\%  & \multicolumn{11}{|c|}{$1$}  \\ \hline',
+        r'$\gamma_{\sum}$, ~\%  & \multicolumn{11}{|c|}{$1$}  \\ \hline',
     ]
 
     # for row in third_six_rows:
     #     row = row.format(1)
 
     bottom_row = [r'$\delta_n$, ~\%', ]
-    bottom_row_string = ' $%s$ '
+    bottom_row_string = ' $%.1f$ '
 
-    for humidity, capacitance in RESULTS:
-        bottom_row.append(bottom_row_string % humidity)
+    for result in DELTA_N:
+        bottom_row.append(bottom_row_string % result)
 
     first_row = amp_newline_join(first_row) + newline
     second_row = amp_join(second_row) + newline
@@ -181,6 +193,42 @@ def print_sensitivity_table():
     return begin + tabular + first_row + second_row + third_six_rows + bottom_row + end
 
 
-def print_delta_fi():
-    euqiation = r'\Delta = \frac{%s}{%s} = \aprox = %s %s' % ('', '', '', MEASUREMENT_UNITS)
-    return BEGIN_EQUATION + END_EQUATION
+def print_delta_sum():
+    formula_string = r'\delta_{\sum%s} &= \frac{%s}{%s} \cdot 100 %s &= %.2f %s; %s'
+    output_formula = []
+
+    counter = 0
+    before = ''
+
+    first_column = int(round(RESULTS_COUNT / 2))
+
+    for i in range(RESULTS_COUNT):
+        counter += 1
+
+        if counter == 1:
+            before = r'\begin{aligned}[t]'
+            after = r'\\[1em]'
+
+        elif counter == first_column:
+            after = r'\end{aligned} \quad \begin{aligned}[t]'
+
+        elif counter == RESULTS_COUNT:
+            after = r'\end{aligned}'
+        else:
+            before = ''
+            after = r'\\[1em] '
+
+        output_formula.append(
+            before +
+            formula_string % (
+                i + 1,
+                DELTA_C_SUM,
+                RESULTS[i][0],
+                r'~\%',
+                DELTA_N[i],
+                r'~\%',
+                after,
+            ))
+
+    output_formula = r'\begin{equation}' + '\n' + '\n'.join(output_formula) + '\n' + r'\end{equation}'
+    return output_formula

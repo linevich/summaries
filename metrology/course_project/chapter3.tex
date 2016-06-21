@@ -2,8 +2,8 @@
 \section{Визначення метрологічних характеристик електроного ємнісного гігрометра}
 
 Для визначення метрологічних характеристик ємнісного гігрометра було використано
-зразковий(еталонний) гігрометр ``Testo 605 H1'' і мультиметр налаштований на вимрювання ємності який
-було під’єднано до досліджувагого гігрометра.
+зразковий (еталонний) гігрометр ``Testo 605 H1'' і мультиметр налаштований на вимірювання ємності який
+було під’єднано до досліджуваного гігрометра.
 
 Отримано 11 значень вологості і напруги. Результати обрахунків та вимірювань наведені в таблиці \ref{t:metrological_exp}
 
@@ -18,7 +18,7 @@
 \end{equation}
 
 \begin{itemize}
-\item [Де:] $C$ --- ємність мембрани, ~пкФ;
+\item [Де:] $C$ --- ємність мембрани, ~пФ;
 \item []$\varphi$ ---  значення вологості, ~\%.
 \end{itemize}
 
@@ -34,14 +34,14 @@
  \end{equation}
 
  \begin{itemize}
- \item [Де:] $S_n$ --- чутливість n-го результату спостереження, пкФ/\%;
+ \item [Де:] $S_n$ --- чутливість n-го результату спостереження, пФ/\%;
  \item []$n$ ---  кількість результатів спостереження.
  \end{itemize}
 
  \input{./py/print_sensitivity_am.tex}
 
 
-\subsection{Визначення cумарної середньоквадратичної похибки вимірюваня}
+\subsection{Визначення cумарної середньої квадратичної похибки вимірюваня}
 
 \begin{equation}
   \Delta C_{\sum} = \sqrt{\Delta C_1^2 + \Delta C_2^2}
@@ -57,29 +57,45 @@
 
 \begin{gather}
   \varphi_{max} = 95 ~\%; \nonumber\\
-  \Delta \gamma_{\text{гігр.}} = 3.158 ~\%; \\
-  \Delta \varphi = \frac{95 \cdot 3.158}{100} = 3.0 \%. \nonumber
+  \Delta \gamma_{\text{гігр.}} = 1 ~\%; \\
+  \Delta \varphi = \frac{95 \cdot 1}{100} = 0.95 \%. \nonumber
 \end{gather}
 \begin{equation}
-    \Delta C_1 = \Delta \varphi \cdot S_{\text{cep}} = 3 \cdot 7.72 = 23.16 ~\text{пкФ}
+    \Delta C_1 = \Delta \varphi \cdot S_{\text{cep}} = 0.95 \cdot 8.14 = 7.73 ~\text{пФ}
 \end{equation}
 \begin{gather}
-    C_{max} = 2000 ~\text{пкФ}; \nonumber\\
-    \Delta \gamma_{\text{мульт.}} = 4 ~\%; \\
-    \Delta C_2 = \frac{C_{max} \cdot \gamma_{\text{мульт.}}}{100} = \frac{2000 \cdot 4}{100} = 80 ~\text{пкФ}. \nonumber
+    C_{max} = 2000 ~\text{пФ}; \nonumber\\
+    \Delta \gamma_{\text{мульт.}} = 1 ~\%; \\
+    \Delta C_2 = \frac{C_{max} \cdot \gamma_{\text{мульт.}}}{100} = \frac{2000 \cdot 1}{100} = 20 ~\text{пФ}. \nonumber
 \end{gather}
 
 \begin{equation}
-  \Delta C_{\sum}  = \sqrt{23.16^2 + 20^2} = 83.285 ~\text{пкФ}
+  \Delta C_{\sum}  = \sqrt{23.16^2 + 20^2} = 83.285 ~\text{пФ}
 \end{equation}
 
-
-    
 \subsection{Визначення приведеної похибки вимірювання}
 Визначимо приведену похибку:
 
-\subsection{Визначимо відносну похибку вимірювання:}
-Визначимо відносну похибку вимірювання:
+\begin{equation}
+    \delta_{\sum} = \frac{\Delta C_{\sum}}{C}
+\end{equation}
+
+\input{./py/print_delta_sum.tex}
+
+\subsection{Визначення відносіної похибки вимірювання}
+Визначимо відносну похибку вимірювання за наступною формулою:
+\begin{equation}
+    \gamma_{\sum} = \frac{\Delta C_{\sum}}{C_{\text{макс}}} \cdot 100\%
+\end{equation}
+\begin{itemize}
+\item [Де:] $\Delta C_{\sum}$ --- сумарна середня квадратична похибка вимірювання, пФ;
+\item []$C_{\text{макс}}$ ---  максимальне значення ємності.
+\end{itemize}
+\begin{equation}
+    \gamma_{\sum} = \frac{21.443}{2000} \cdot 100\%= 1.07\%
+\end{equation}
+
+\subsection{Визначення варіації}
 
 \section*{Висновки до розділу 3}
 \addcontentsline{toc}{section}{Висновки до розділу 3}
