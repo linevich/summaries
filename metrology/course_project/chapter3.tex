@@ -104,12 +104,39 @@
 \end{equation}
 \subsection{Статична характеристика}
 
-\begin{figure}[!h] \centering
-  \includegraphics[width=0.9\textwidth]{./images/plot.png}
-  \caption{Статична характеристика ємнісного гігрометра ``Testo 605 H1''}
-  \label{fig:building}
-\end{figure}
+Графік статичної характеристики наведено на \ref{fig:static_c}
 
+\begin{figure}[htb]
+\centering{
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}
+\begin{axis}[
+    xmin=0,
+    xmax=100,
+    ymin=0,
+    ymax=800,
+    grid=both,
+    grid style={line width=.1pt, draw=gray!10},
+    major grid style={line width=.2pt,draw=gray!50},
+    minor tick num=5,
+    enlargelimits={abs=0.5},
+    axis line style={latex-latex},
+    ticklabel style={font=\tiny,fill=white},
+]
+
+\addplot[
+    color=blue,
+    mark=*,
+    ]
+    coordinates {
+    (24.1, 160)(32.3, 256)(42.0, 343)(53.1, 452)(67.0, 600)(82.3, 722)(65.9, 594)(51.6, 450)(42.4, 347)(33.2, 255)(24.0, 166)
+    };
+
+\end{axis}
+\end{tikzpicture}}}
+\caption{Статична характеристика}
+ \label{fig:static_c}
+\end{figure}
 \newpage
 \section*{Висновки до розділу 3}
 \addcontentsline{toc}{section}{Висновки до розділу 3}
