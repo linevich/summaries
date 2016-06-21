@@ -98,7 +98,7 @@ DELTA_C_SUM = 21.443
 def delta_n():
     results = []
     for humidity, capacitance in RESULTS:
-        results.append(round((DELTA_C_SUM / capacitance * 100), 3))
+        results.append(round((DELTA_C_SUM / capacitance * 100), 2))
     return results
 
 
@@ -159,7 +159,7 @@ def print_sensitivity_table():
 
     tabular = tabular_string % '|'.join(tabular) + '\n\\hline\n'
 
-    first_row = [r'\multicolumn{1}{|c|}{$\varphi$,~\%}', ]
+    first_row = [r'\multicolumn{1}{|c|}{$\varphi$,\%}', ]
     first_row_string = r'\multicolumn{1}{c|}{%s}'
 
     second_row = [r'$C$,~\text{пФ}', ]
@@ -170,16 +170,16 @@ def print_sensitivity_table():
         second_row.append(second_row_string % capacitance)
 
     third_six_rows = [
-        r'$\Delta C_1$, ~\text{пФ} & \multicolumn{11}{|c|}{$1$}  \\ \hline',
-        r'$\Delta C_2$, ~\text{пФ} & \multicolumn{11}{|c|}{$1$}  \\ \hline',
-        r'$\Delta C_{\sum}$, ~пФ  & \multicolumn{11}{|c|}{$1$}  \\ \hline',
-        r'$\gamma_{\sum}$, ~\%  & \multicolumn{11}{|c|}{$1$}  \\ \hline',
+        r'$\Delta C_1$, ~\text{пФ} & \multicolumn{11}{|c|}{$7.73$}  \\ \hline',
+        r'$\Delta C_2$, ~\text{пФ} & \multicolumn{11}{|c|}{$20$}  \\ \hline',
+        r'$\Delta C_{\sum}$, ~пФ  & \multicolumn{11}{|c|}{$83.29$}  \\ \hline',
+        r'$\gamma_{\sum}$, \%  & \multicolumn{11}{|c|}{$1.07$}  \\ \hline',
     ]
 
     # for row in third_six_rows:
     #     row = row.format(1)
 
-    bottom_row = [r'$\delta_n$, ~\%', ]
+    bottom_row = [r'$\delta_n$, \%', ]
     bottom_row_string = ' $%.1f$ '
 
     for result in DELTA_N:
@@ -194,7 +194,7 @@ def print_sensitivity_table():
 
 
 def print_delta_sum():
-    formula_string = r'\delta_{\sum%s} &= \frac{%s}{%s} \cdot 100 %s &= %.2f %s; %s'
+    formula_string = r'\delta_{\sum%s} &= \frac{%s}{%s} \cdot 100%s = %.2f %s; %s'
     output_formula = []
 
     counter = 0
@@ -210,7 +210,7 @@ def print_delta_sum():
             after = r'\\[1em]'
 
         elif counter == first_column:
-            after = r'\end{aligned} \quad \begin{aligned}[t]'
+            after = r'\end{aligned} \qquad \begin{aligned}[t]'
 
         elif counter == RESULTS_COUNT:
             after = r'\end{aligned}'
@@ -224,9 +224,9 @@ def print_delta_sum():
                 i + 1,
                 DELTA_C_SUM,
                 RESULTS[i][0],
-                r'~\%',
+                r'\%',
                 DELTA_N[i],
-                r'~\%',
+                r'\%',
                 after,
             ))
 
