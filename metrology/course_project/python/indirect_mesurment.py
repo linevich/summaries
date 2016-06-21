@@ -20,7 +20,7 @@ TABLE_END = r"""\end{tabular}
 # Вихідні дані
 RESULTS = [48.0, 48.0, 47.9, 47.9, 48.0, 48.1, 48.1, 48.0, 48.0, 48.0,
            47.9, 47.9, 47.9, 48.0, 48.0, 48.0, 48.0, 48.1, 48.1, 48.1,
-           48.0, 48.0, 47.8, 47.9, 48.0, 48.0, 48.1, 48.2, 48.0, 48.0, ]
+           48.0, 48.0, 47.9, 47.9, 48.0, 48.0, 48.1, 48.1, 48.0, 48.0, ]
 
 # Одиниці вимірювання
 MEASUREMENT_UNIT = r'\%'
@@ -166,6 +166,17 @@ def print_observations_confident_interval():
         ARITHMETIC_MEAN_OF_FI,
         DELTA,
         ARITHMETIC_MEAN_OF_FI,
-        float(ARITHMETIC_MEAN_OF_FI) * float(DELTA)
+        2 * float(DELTA)
+    )
+    return BEGIN_EQUATION + equation_string + MEASUREMENT_UNIT + END_EQUATION
+
+
+def print_calculations_confident_interval():
+    equation_string = r'\Delta_{\text{са}} = %.2f \pm 2.04 \cdot %.3f = ( %.2f \pm %.3f )'
+    equation_string = equation_string % (
+        ARITHMETIC_MEAN_OF_FI,
+        DELTA_CA,
+        ARITHMETIC_MEAN_OF_FI,
+        2.04 * float(DELTA_CA)
     )
     return BEGIN_EQUATION + equation_string + MEASUREMENT_UNIT + END_EQUATION
