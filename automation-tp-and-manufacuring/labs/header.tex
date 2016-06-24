@@ -11,6 +11,7 @@
 \usepackage{cancel} % Закреслювання виразів (скорочення)
 \usepackage{xfrac} % Косий дріб
 \usepackage{pgfplots}
+%usepackage{float}
 
 \usepackage{siunitx}
 
@@ -132,7 +133,7 @@
   color=black,
   opacity=1.0,
   angle=0,
-  contents={\includegraphics[width=\paperwidth,height=\paperheight]{images/border_default.svg.png}}
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{images/border_default.png}}
 }
 
 % Задаємо команду для визначення змінних:
@@ -145,6 +146,7 @@
 \usepackage{enumitem}
 \usepackage{csquotes}
 
+
 \title{Звіт з лабораторних робіт}
 \author{Ліневич А.С}
 \date{2016/04/31}
@@ -152,4 +154,17 @@
 \newlength{\indentation}
 \settowidth{\indentation}{ааа} % Подумки бажаю горіти в пеклі тому хто придумав визначення "абзац = 3 символи"
 
+\usepackage{titletoc}
+\titlecontents*{chapter}% <section-type>
+  [0pt]% <left>
+  {}% <above-code>
+  {\bfseries\chaptername\ \thecontentslabel\quad}% <numbered-entry-format>
+  {}% <numberless-entry-format>
+  {\bfseries\hfill\contentspage \\}% <filler-page-format>
+
+
+\usepackage{enumitem}
+\setlist[enumerate]{label*=\arabic*.}
+
 \parindent=\indentation
+\pagenumbering{gobble}
