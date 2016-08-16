@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with "sPlan" (http://www.abacom-online.de) -->
+<svg version="1.1" baseProfile="full"
+xmlns="http://www.w3.org/2000/svg"
+width="2100" height="2970">
+<title>sPlan</title>
+<defs>
+<style type="text/css">
+<![CDATA[
+polyline {stroke-linecap:round; stroke-linejoin:round}
+polygon {stroke-linecap:round; stroke-linejoin:round}
+path {stroke-linecap:round; stroke-linejoin:round}
+circle {stroke-linecap:round; stroke-linejoin:round}
+]]>
+</style>
+</defs>
+<line x1="170.00" y1="2120.00" x2="170.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="2020.00" y1="2120.00" x2="2020.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="170.00" y1="2140.00" x2="2020.00" y2="2140.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="2020.00 2140.00 1992.24 2136.35 1992.24 2143.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="170.00 2140.00 197.76 2143.65 197.76 2136.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="1071.48" y="2132.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">185</text>
+<line x1="930.00" y1="2350.00" x2="910.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="930.00" y1="2900.00" x2="910.00" y2="2900.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="910.00" y1="2350.00" x2="910.00" y2="2900.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="910.00 2900.00 913.65 2872.24 906.35 2872.24" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="910.00 2350.00 906.35 2377.76 913.65 2377.76" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="-2679.72" y="902.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(-90.000) scale(1.000,1.000)">5х11=55</text>
+<path fill="none" stroke="rgb(0,0,0)" stroke-width="6" style="stroke-linecap:square; stroke-linejoin:miter" d=" M 170 2350 L 2020 2350 2020 2900 170 2900 170 2350" />
+<line x1="2020.00" y1="2400.00" x2="2020.00" y2="2500.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1520.00" y1="2400.00" x2="1520.00" y2="2500.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="2020.00" y1="2420.00" x2="1520.00" y2="2420.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1520.00 2420.00 1547.76 2423.65 1547.76 2416.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="2020.00 2420.00 1992.24 2416.35 1992.24 2423.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="1754.32" y="2412.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">50</text>
+<path fill="none" stroke="rgb(0,0,0)" stroke-width="6" style="stroke-linecap:square; stroke-linejoin:miter" d=" M 1520 2500 L 2020 2500 2020 2900 1520 2900 1520 2500" />
+<line x1="1450.00" y1="2900.00" x2="1520.00" y2="2900.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1450.00" y1="2750.00" x2="1520.00" y2="2750.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1470.00" y1="2900.00" x2="1470.00" y2="2750.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2750.00 1466.35 2777.76 1473.65 2777.76" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2900.00 1473.65 2872.24 1466.35 2872.24" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="-2840.67" y="1462.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(-90.000) scale(1.000,1.000)">15</text>
+<line x1="1450.00" y1="2500.00" x2="1520.00" y2="2500.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1450.00" y1="2350.00" x2="1520.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1470.00" y1="2500.00" x2="1470.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2350.00 1466.35 2377.76 1473.65 2377.76" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2500.00 1473.65 2472.24 1466.35 2472.24" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="-2440.67" y="1462.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(-90.000) scale(1.000,1.000)">15</text>
+<line x1="1450.00" y1="2700.00" x2="1520.00" y2="2700.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1450.00" y1="2550.00" x2="1520.00" y2="2550.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1470.00" y1="2700.00" x2="1470.00" y2="2550.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2550.00 1466.35 2577.76 1473.65 2577.76" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2700.00 1473.65 2672.24 1466.35 2672.24" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="-2640.67" y="1462.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(-90.000) scale(1.000,1.000)">15</text>
+<line x1="1450.00" y1="2550.00" x2="1520.00" y2="2550.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1450.00" y1="2500.00" x2="1520.00" y2="2500.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1470.00" y1="2606.00" x2="1470.00" y2="2444.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2500.00 1473.65 2472.24 1466.35 2472.24" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2550.00 1466.35 2577.76 1473.65 2577.76" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="-2532.85" y="1462.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(-90.000) scale(1.000,1.000)">5</text>
+<line x1="1450.00" y1="2750.00" x2="1520.00" y2="2750.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1450.00" y1="2700.00" x2="1520.00" y2="2700.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1470.00" y1="2806.00" x2="1470.00" y2="2644.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2700.00 1473.65 2672.24 1466.35 2672.24" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1470.00 2750.00 1466.35 2777.76 1473.65 2777.76" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="-2732.85" y="1462.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(-90.000) scale(1.000,1.000)">5</text>
+<polyline points="1520.00 2550.00 2020.00 2550.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="1520.00 2700.00 2020.00 2700.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="1519.00 2750.00 2018.00 2750.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<line x1="2020.00" y1="2680.00" x2="2020.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1850.00" y1="2680.00" x2="1850.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="2020.00" y1="2660.00" x2="1850.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1850.00 2660.00 1877.76 2663.65 1877.76 2656.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="2020.00 2660.00 1992.24 2656.35 1992.24 2663.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="1919.32" y="2652.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">17</text>
+<line x1="1850.00" y1="2680.00" x2="1850.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1670.00" y1="2680.00" x2="1670.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1850.00" y1="2660.00" x2="1670.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1670.00 2660.00 1697.76 2663.65 1697.76 2656.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1850.00 2660.00 1822.24 2656.35 1822.24 2663.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="1744.32" y="2652.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">18</text>
+<line x1="1620.00" y1="2680.00" x2="1620.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1570.00" y1="2680.00" x2="1570.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1620.00" y1="2660.00" x2="1570.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1570.00 2660.00 1570.99 2660.13 1570.99 2659.87" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1620.00 2660.00 1619.01 2659.87 1619.01 2660.13" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="1587.15" y="2652.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">5</text>
+<line x1="1570.00" y1="2680.00" x2="1570.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1520.00" y1="2680.00" x2="1520.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1570.00" y1="2660.00" x2="1520.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1520.00 2660.00 1520.99 2660.13 1520.99 2659.87" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1570.00 2660.00 1569.01 2659.87 1569.01 2660.13" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="1537.15" y="2652.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">5</text>
+<line x1="1670.00" y1="2680.00" x2="1670.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1620.00" y1="2680.00" x2="1620.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1670.00" y1="2660.00" x2="1620.00" y2="2660.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1620.00 2660.00 1620.99 2660.13 1620.99 2659.87" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1670.00 2660.00 1669.01 2659.87 1669.01 2660.13" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="1637.15" y="2652.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">5</text>
+<line x1="1520.00" y1="2810.00" x2="1520.00" y2="2750.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1720.00" y1="2810.00" x2="1720.00" y2="2750.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="1520.00" y1="2790.00" x2="1720.00" y2="2790.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1720.00 2790.00 1692.24 2786.35 1692.24 2793.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="1520.00 2790.00 1547.76 2793.65 1547.76 2786.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="1604.32" y="2782.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">20</text>
+<polyline points="1570.00 2550.00 1570.00 2700.00 1620.00 2700.00 1620.00 2550.00 1670.00 2550.00 1670.00 2700.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="1670.00 2550.00 1670.00 2500.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="1850.00 2500.00 1850.00 2700.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="1720.00 2750.00 1720.00 2700.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<line x1="170.00" y1="2250.00" x2="170.00" y2="2330.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="240.00" y1="2250.00" x2="240.00" y2="2330.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="114.00" y1="2270.00" x2="296.00" y2="2270.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="240.00 2270.00 267.76 2273.65 267.76 2266.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="170.00 2270.00 142.24 2266.35 142.24 2273.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="197.16" y="2262.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">7</text>
+<line x1="240.00" y1="2250.00" x2="240.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="340.00" y1="2250.00" x2="340.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="240.00" y1="2270.00" x2="340.00" y2="2270.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="340.00 2270.00 312.24 2266.35 312.24 2273.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="240.00 2270.00 267.76 2273.65 267.76 2266.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="274.32" y="2262.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">10</text>
+<line x1="340.00" y1="2250.00" x2="340.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="570.00" y1="2250.00" x2="570.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="340.00" y1="2270.00" x2="570.00" y2="2270.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="570.00 2270.00 542.24 2266.35 542.24 2273.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="340.00 2270.00 367.76 2273.65 367.76 2266.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="439.32" y="2262.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">23</text>
+<line x1="720.00" y1="2250.00" x2="720.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="570.00" y1="2250.00" x2="570.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="720.00" y1="2270.00" x2="570.00" y2="2270.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="570.00 2270.00 597.76 2273.65 597.76 2266.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="720.00 2270.00 692.24 2266.35 692.24 2273.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="629.32" y="2262.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">15</text>
+<line x1="720.00" y1="2250.00" x2="720.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="820.00" y1="2250.00" x2="820.00" y2="2350.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<line x1="720.00" y1="2270.00" x2="820.00" y2="2270.00"  fill="none" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="820.00 2270.00 792.24 2266.35 792.24 2273.65" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<polygon points="720.00 2270.00 747.76 2273.65 747.76 2266.35" fill="rgb(128,128,128)" stroke="rgb(128,128,128)" stroke-width="1" />
+<text x="754.32" y="2262.00" font-family ="Arial" font-size ="22pt" font-weight="normal" font-style="normal" fill="rgb(128,128,128)" transform=" rotate(0.000) scale(1.000,1.000)">10</text>
+<polyline points="240.00 2350.00 241.00 2900.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="339.00 2350.00 339.00 2900.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="569.00 2350.00 569.00 2900.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="720.00 2350.00 720.00 2900.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="820.00 2350.00 820.00 2900.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="1519.00 2500.00 819.00 2500.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="1519.00 2750.00 819.00 2750.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="170.00 2400.00 820.00 2400.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="170.00 2450.00 820.00 2450.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="170.00 2500.00 819.00 2500.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="170.00 2550.00 820.00 2550.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="170.00 2600.00 820.00 2600.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="170.00 2650.00 820.00 2650.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="170.00 2700.00 820.00 2700.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="170.00 2800.00 820.00 2800.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="170.00 2750.00 819.00 2750.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="170.00 2850.00 820.00 2850.00" fill="none" stroke="rgb(0,0,0)" stroke-width="2" />
+<polyline points="240.00 2350.00 240.00 2600.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<polyline points="1670.00 2550.00 1670.00 2700.00" fill="none" stroke="rgb(0,0,0)" stroke-width="6" />
+<text x="184.60" y="2592.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">Зм</text>
+<text x="261.80" y="2592.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">Арк</text>
+<text x="383.40" y="2592.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">№ &#196;окум</text>
+<text x="595.60" y="2592.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">Пі&#228;пис</text>
+<text x="728.20" y="2592.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">&#196;ата</text>
+<text x="1541.80" y="2542.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">Літера</text>
+<text x="1722.00" y="2542.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">Маса</text>
+<text x="1864.60" y="2542.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">Масштаб</text>
+<text x="1569.60" y="2742.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">Аркуш</text>
+<text x="1807.40" y="2742.00" font-family ="GOST type B" font-size ="28pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">Аркушів</text>
+</svg>
