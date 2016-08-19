@@ -11,6 +11,7 @@
 \usepackage{cancel} % Закреслювання виразів (скорочення)
 \usepackage{xfrac} % Косий дріб
 \usepackage{pgfplots}
+\usepackage{placeins} % Допомагає встановлювати тримати рисунки в межах розділів
 %usepackage{float}
 
 \usepackage{siunitx}
@@ -69,7 +70,7 @@
 
 % Форматування рисунків
 \makeatletter
-\renewcommand\p@figure{рис. \thechapter.\arabic{figure}\expandafter\@gobble}
+\renewcommand\p@figure{рис.~\thechapter.\arabic{figure}\expandafter\@gobble}
 \makeatother
 
 % Форматування назв розділів
