@@ -3,10 +3,10 @@
 		     "Compiles pdf from current summary."
 		     (interactive)
 		     (message "Building PDF")
-		     ;; (async-shell-command
-		     ;;  (concat "cd "
-		     ;; 	      (file-name-directory buffer-file-name)
-		     ;; 	      " && make pdf && mupdf build/document.pdf") nil nil)
+		     (async-shell-command
+		      (concat "cd "
+		     	      (file-name-directory buffer-file-name)
+		     	      " && make pdf") nil nil)
 		     )
 
 		   (defvar summary-mode-map (make-sparse-keymap))
