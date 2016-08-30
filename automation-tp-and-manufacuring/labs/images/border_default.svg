@@ -13,7 +13,7 @@
    height="297mm"
    id="svg16516"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="border_default.svg"
    inkscape:export-filename="/home/linevich/projects/summaries/automation-tp-and-manufacuring/labs/images/border_default.png"
    inkscape:export-xdpi="300.0108"
@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="522.29301"
-     inkscape:cy="-1.289945"
+     inkscape:zoom="3.959798"
+     inkscape:cx="491.63378"
+     inkscape:cy="19.733725"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,8 +39,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1276"
-     inkscape:window-height="985"
+     inkscape:window-width="2556"
+     inkscape:window-height="1041"
      inkscape:window-x="0"
      inkscape:window-y="37"
      inkscape:window-maximized="0"
@@ -174,7 +174,8 @@
        style="fill:#000000;stroke:none"
        cx="75.356682"
        cy="1018.8633"
-       r="1.5" />
+       r="1.5"
+       d="m 76.856682,1018.8633 c 0,0.8284 -0.671573,1.5 -1.5,1.5 -0.828427,0 -1.5,-0.6716 -1.5,-1.5 0,-0.8284 0.671573,-1.5 1.5,-1.5 0.828427,0 1.5,0.6716 1.5,1.5 z" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 73.928114,1018.4521 230.714276,0"
@@ -262,15 +263,15 @@
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'GOST type B';-inkscape-font-specification:'GOST type B Italic'">Підпис</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'GOST type B';-inkscape-font-specification:'GOST type B Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="399.92004"
-       y="1013.752"
+       style="font-size:24px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:GOST type B;-inkscape-font-specification:GOST type B Italic"
+       x="394.11166"
+       y="1014.5096"
        id="text4170"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4172"
-         x="399.92004"
-         y="1013.752">ІКАТ.420 010. 013 - ЗЛ</tspan></text>
+         x="394.11166"
+         y="1014.5096">ІКАТ.420 010. 013 - ЗЛ</tspan></text>
   </g>
   <metadata
      id="metadata195">
