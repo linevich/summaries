@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="border_default.svg"
-   inkscape:export-filename="/home/linevich/projects/summaries/automation-tp-and-manufacuring/labs/images/border_default.png"
+   inkscape:export-filename="/home/linevich/projects/summaries/cad/images/border_default.png"
    inkscape:export-xdpi="300.0108"
    inkscape:export-ydpi="300.0108">
   <defs
@@ -28,7 +28,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="491.63378"
+     inkscape:cx="445.54557"
      inkscape:cy="19.733725"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -177,7 +177,7 @@
        r="1.5"
        d="m 76.856682,1018.8633 c 0,0.8284 -0.671573,1.5 -1.5,1.5 -0.828427,0 -1.5,-0.6716 -1.5,-1.5 0,-0.8284 0.671573,-1.5 1.5,-1.5 0.828427,0 1.5,0.6716 1.5,1.5 z" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.48031496;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 73.928114,1018.4521 230.714276,0"
        id="path4352"
        inkscape:connector-curvature="0"
@@ -186,7 +186,7 @@
        inkscape:connector-curvature="0"
        id="path4354"
        d="m 73.928114,999.35734 229.999996,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.70866142;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
