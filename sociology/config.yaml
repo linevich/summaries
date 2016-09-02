@@ -1,28 +1,21 @@
 ---
-title: "Соціологія"
-documentclass: "eskdtext"
+title: "Соціологія."
+documentclass: "extreport"
 classoption:
   - "utf8"
-  - "nocolumnsxix"
-  - "nocolumnxxxi"
-  - "nocolumnxxxii"
+  - "14pt"
+  - "a4paper"
 author: "Ліневич А.С"
-date: "2016/04/31"
+date: \today{}
 toc: True
+toc-depth: 5
 lang: uk
+geometry: [top=2cm, right=1cm, left=3cm, bottom=2cm]
 header-includes:
     - \usepackage{xecyr}
     - \newfontfamily\cyrillicfont{Times New Roman}
-    - \setsansfont{GOST type B}
-    - \ESKDdepartment{\uppercase{Житомирський Державний Технологічний Університет}}
-    - \ESKDdocName{Конспект з курсу}
-    - \ESKDtitleDesignedBy{Студента групи АТ-22}{Ліневич А.С}
-    - \ESKDtitleDesignedBy{Викладач}{Кругляк М.Е}
-    - \ESKDchecker{Кругляк М.Е}
-    - \ESKDcolumnIX{ЖДТУ АТ-22}
-    - \ESKDsectSkip{section}{0.5cm}{0.5cm}
-    - \ESKDsectSkip{subsection}{0.5cm}{0.5cm}
-    - \ESKDsectSkip{subsubsection}{0.5cm}{0.5cm}
-    - \renewcommand{\ESKDtitleFontI}{\ESKDfontV\upshape}
-
+    - \parindent=1.2cm
+    - \usepackage{setspace}
+    - \usepackage{indentfirst} 
+    - \setstretch{1.3}
 ---
