@@ -14,7 +14,6 @@ geometry: [top=2cm, right=1cm, left=3cm, bottom=2cm]
 header-includes:
     - \usepackage{xecyr}
     - \newfontfamily\cyrillicfont{Times New Roman}
-    - \parindent=1.2cm
     - \usepackage{setspace}
     - \usepackage{indentfirst} 
     - \setstretch{1.3}
