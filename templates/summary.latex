@@ -218,6 +218,11 @@ $if(institute)$
 $endif$
 \date{$date$}
 
+
+\newlength{\indentation}
+\settowidth{\indentation}{ааа} % Подумки бажаю горіти в пеклі тому хто придумав визначення "абзац = 3 символи"
+\parindent=\indentation
+
 \begin{document}
 \let\otherbegin\begin
 \let\otherend\end
