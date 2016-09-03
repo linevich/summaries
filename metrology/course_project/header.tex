@@ -168,3 +168,9 @@
 \settowidth{\indentation}{ааа} % Подумки бажаю горіти в пеклі тому хто придумав визначення "абзац = 3 символи"
 
 \parindent=\indentation
+
+
+% Приховуємо заголовок зі змісту без втрати нумерацї
+% http://stackoverflow.com/questions/2785260/hide-an-entry-from-toc-in-latex
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
