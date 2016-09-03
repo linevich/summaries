@@ -12,6 +12,8 @@
   [[PDF](sociology/build/build.pdf)]
 - [Політологія (2 курс)](politology)
   [[PDF](politology/build/build.pdf)]
+- [Основи САПР. Звіт по Лабораторним. (2 курс)](cad)
+  [[PDF](cad/build/document.pdf)]
 
 [Зворотній зв’язок.](mailto:linevich.net@gmail.com)
 
