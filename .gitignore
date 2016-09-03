@@ -8,5 +8,7 @@
 *.bcf
 *.run.xml
 *.bak
+*.pyc
 tmp/
 metrology/course_project/py
+__pycache__/
