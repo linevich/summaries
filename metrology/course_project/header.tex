@@ -45,7 +45,7 @@
   \usepackage{polyglossia}
   \setmainlanguage[]{ukrainian}
 \fi
-\usepackage{biblatex}
+\usepackage[backend=biber]{biblatex}
 
 \addbibresource{bibliography.bib}
 \IfFileExists{parskip.sty}{%
@@ -174,3 +174,5 @@
 % http://stackoverflow.com/questions/2785260/hide-an-entry-from-toc-in-latex
 \newcommand{\nocontentsline}[3]{}
 \newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+
+\addbibresource{bibliography.bib}  
