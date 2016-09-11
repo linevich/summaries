@@ -3,7 +3,7 @@
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage[top=1cm, bottom=2.2cm, left=3cm, right=1cm, headheight=0cm, foot=1cm]{geometry}
+\usepackage[top=1cm, bottom=2.2cm, left=3cm, right=0.7cm, headheight=0cm, foot=1.35cm]{geometry}
 \usepackage{fixltx2e}
 \usepackage{indentfirst}
 \usepackage{breqn}
@@ -11,6 +11,7 @@
 \usepackage{cancel} % Закреслювання виразів (скорочення)
 \usepackage{xfrac} % Косий дріб
 \usepackage{pgfplots}
+\usepackage{fancyhdr}
 
 \usepackage{siunitx}
 
@@ -68,7 +69,9 @@
 \fi
 \usepackage{xecyr}
 \newfontfamily\cyrillicfont{Times New Roman}
+\newfontfamily{\cyrillicfontsf}{GOST type B}[Script=Cyrillic,ItalicFont=*,ItalicFeatures={FakeSlant=0.3}]
 \setsansfont{GOST type B}
+
 % \ESKDdepartment{\uppercase{Житомирський Державний Технологічний Університет}}
 % \ESKDcompany{Кафедра автоматизованого управління технологічними процесами та комп’ютерних технологій}
 % \ESKDdocName{Курсовий проект}
@@ -142,14 +145,6 @@
 
 \usepackage{background}
 
-\backgroundsetup{
-  scale=1,
-  color=black,
-  opacity=1.0,
-  angle=0,
-  contents={\includegraphics[width=\paperwidth,height=\paperheight]{images/border_default.svg.png}}
-}
-
 % Задаємо команду для визначення змінних:
 % потребує пакетів array та tabularx.
 \usepackage{tabularx}
@@ -176,3 +171,19 @@
 \newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
 
 \addbibresource{bibliography.bib}  
+
+\pagestyle{fancy}
+
+\fancyhf{} % Start with clearing everything in the header and footer
+% Set the right side of the footer to be the page number
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\textsf{\textit{\thepage}}}
+
+% Redefine plain style, which is used for titlepage and chapter beginnings
+% From http://tex.stackexchange.com/a/30230/828
+
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf{}%
+  \fancyfoot[R]{\textsf{\textit{\thepage}}}
+}

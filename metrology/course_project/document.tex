@@ -2,7 +2,23 @@
 
 \begin{document}
 \maketitle
+\backgroundsetup{
+  scale=1,
+  color=black,
+  opacity=1.0,
+  angle=0,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{images/border_firstpage.jpg}}
+}
+\newgeometry{top=1cm, bottom=4.5cm, left=3cm, right=0.7cm, headheight=0cm, foot=0cm}
 {\setcounter{tocdepth}{3}\tableofcontents}
+\backgroundsetup{
+  scale=1,
+  color=black,
+  opacity=1.0,
+  angle=0,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{images/border_default.svg.png}}
+}
+\restoregeometry
 
 \input{./introduction.tex}
 \input{./chapter1.tex}
