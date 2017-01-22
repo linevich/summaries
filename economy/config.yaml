@@ -21,4 +21,8 @@ header-includes:
     - \setstretch{1.3}
     - \usepackage{polyglossia}
     - \setmainlanguage[]{ukrainian}
+    - \usepackage{awesomebox}
+    - \usepackage[norule,hang]{footmisc}
+    - \usepackage{enumitem}
+    - \usepackage{multicol}
 ---
