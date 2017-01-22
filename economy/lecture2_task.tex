@@ -14,7 +14,8 @@
 
 $$A_\text{рік} = \frac{36000}{5}\text{~грн} = 7200\text{~грн}$$
 
-\begin{table}[!ht]
+\begin{table}[!htb]
+\begin{subtable}{.5\linewidth}
   \centering
   \begin{tabular}{|c|c|c|}
     \hline
@@ -26,9 +27,22 @@ $$A_\text{рік} = \frac{36000}{5}\text{~грн} = 7200\text{~грн}$$
     5      & 11200          & 7200           \\ \hline
     $\sum$ & 4000           & 36000          \\ \hline
   \end{tabular}
+\end{subtable}
+\begin{subtable}{.5\linewidth}
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Рік    & $B_\text{Зал}$ & $A_\text{річ}$ \\ \hline
+    1      & 40000          & 14764      \\ \hline
+    2      & 25236          & 9314       \\ \hline
+    3      & 15322          & 5876       \\ \hline
+    4      & 10046          & 3707       \\ \hline
+    5      & 6339          & 2239        \\ \hline
+    $\sum$ & 4000           & 36000      \\ \hline
+  \end{tabular}
+\end{subtable}
 \end{table}
 
 $$H_a = 1 - \sqrt{\frac{\text{В}_\text{л}}{\text{В}_\text{п}}} \cdot 100\% =
 \sqrt{\frac{4000}{40000}} \cdot 100\% = 36,91 \%$$
 $$A_\text{річ}=B_\text{з} \cdot H_a = 40000 \cdot 36,91 \% = 4764 \text{~грн}$$
-
