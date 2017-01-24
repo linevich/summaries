@@ -22,7 +22,6 @@ header-includes:
     - \usepackage{polyglossia}
     - \setmainlanguage[]{ukrainian}
     - \usepackage{awesomebox}
-    - \usepackage[norule,hang]{footmisc}
     - \usepackage{enumitem}
     - \usepackage{multicol}
     - \usepackage{subcaption}

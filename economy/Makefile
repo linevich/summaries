@@ -4,4 +4,4 @@ odt:
 
 pdf:
 	mkdir -p ./build
-	pandoc --latex-engine=xelatex -sSN --chapters --template=../templates/summary.latex config.yaml *.md -o build/build.pdf
+	pandoc --latex-engine=xelatex -sSN --smart --chapters --template=../templates/summary.latex config.yaml *.md -o build/build.pdf
